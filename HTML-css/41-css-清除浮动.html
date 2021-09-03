@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+        
+        .father {
+            width: 800px;
+            border: 1px solid black;
+             /* overflow: hidden;  */
+
+        }
+
+        .one {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            float: left;
+        }
+
+        .two {
+            width: 300px;
+            height: 400px;
+            background-color: coral;
+            float: left;
+        }
+
+        /* 1 .three {
+            clear: both;
+        } */
+       
+    </style>
+</head>
+<body>
+    <!-- 语法
+    选择器{clear：属性值（left right both）}
+    清除浮动策略 闭合浮动 
+    1 额外标签法 （隔墙法） 在最后一个浮动的子元素后添加额外的标签 添加 清除浮动样式 
+    2 父级 overflow 属性 hidden auto  scroll
+    3 父级 after 元素 
+      .clearfix:after {
+               content: ""
+               display:block;
+               height: 0;
+               clear:both;
+               visibilisty:hedden;
+
+         }
+           .clearfix {
+            照顾低版本 I 6 7专有
+            *zoom 1;
+         }
+         
+    4 父级 双尾元素 -->
+    <!-- 4  .clearfix:before, .clearfix:after {
+         content:"";
+         display:table;
+     }
+     .clearfix {
+         clear box
+     }
+     .clearfix {
+         *zoom：1；
+     } -->
+
+    <div class="father clearfix">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <!-- 1 
+        优点 通俗易懂 
+        缺点 添加无意义标签 结构差
+         注意 要求这个新的空标签必须是块级元素-->
+        <!-- 2 无法显示溢出部分 -->
+        <!-- 3 没有新增加标签 结构更加简单 
+         缺点 照顾低版本浏览器 
+         代表 网易 百度 淘宝 -->
+        <!-- 4 没有新增加标签 结构更加简单 
+         缺点 照顾低版本浏览器  -->
+
+    </div>
+
+</body>
+</html>

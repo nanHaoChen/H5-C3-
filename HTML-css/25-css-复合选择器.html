@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol li {
+
+
+            color: blue;
+        }
+
+        div>p {
+
+            color: rgb(245, 185, 20);
+        }
+
+        .nov a {
+
+            color: red;
+
+        }
+
+        .nov>a {
+
+            color: green;
+
+        }
+
+        div,
+        p,
+        .nov1>a {
+            color: hotpink;
+        }
+
+     
+          /* 选择所有未访问的链接 */
+        .en1:link {
+            color: khaki;
+            text-decoration: underline;
+        }
+
+        /* 选择所有已被访问的链接 */
+        .en2:visited {
+            color: lightcoral;
+        }
+         /* 变化样式 */
+         .en3 {
+       
+            text-decoration: none;
+        }
+        /* 选择鼠标指针位于上面的链接 */
+        .en3:hover {
+            color: lightgreen;
+            text-decoration: underline;
+        }
+        /* 活动点击时的链接 */
+        .en4:active {
+            color: lightsalmon;
+        }
+        .dn1:focus {
+
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 后代选择器 -->
+    <ol>
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+    </ol>
+    <!-- 子代选择器 元素>元素 选择最近的不选择孙子的-->
+    <div>
+       
+        <span>
+            <p>四五六</p>
+        </span>
+        <p>三四五</p>
+    </div>
+    <!-- 练习 -->
+    <div class="nov">
+        <a href="#">大肘子</a>
+        <ul>
+            <li><a href="#">百度</a></li>
+            <li><a href="#">百度</a></li>
+        </ul>
+    </div>
+    <!-- 并集选择器 群组选择器-->
+    <div>六七百</div>
+    <p>七八百</p>
+    <div class="nov1">
+        <a href="#">大肘子</a>
+        <ul>
+            <li><a href="#">百度</a></li>
+            <li><a href="#">百度</a></li>
+        </ul>
+    </div>
+    <!--链接伪类选择器  结构，链接，表格。。。 按照lvha顺序-->
+
+    <a href="#" class="en1">三等奖卡萨回到家撒好看1</a><br>
+    <a href="#" class="en2">三等奖卡萨回到家撒好看2</a><br>
+    <a href="#" class="en3">三等奖卡萨回到家撒好看3</a><br>
+    <a href="#" class="en4">三等奖卡萨回到家撒好看4</a><br>
+    <!-- ：focus选择器  获取焦点的表单选择器-->
+   <input type="text"  class="dn1">
+</body>
+
+</html>

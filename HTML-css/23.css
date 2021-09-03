@@ -1,0 +1,35 @@
+body {
+  font: 16px/20px "Microsoft";
+}
+h1 {
+ font-weight: 400;
+ text-align: center;
+}
+p {
+
+    text-indent: 2em;
+}
+div {
+
+   color: #888888;
+   text-align: center;
+
+}
+a {
+
+    text-decoration: none;
+}
+.pot {
+
+   text-align: center;
+
+}
+.tt {
+
+  font-weight: 700;
+
+}
+.wind {
+color: #000;
+
+}

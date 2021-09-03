@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <style>h2 { 
+        color: blue;
+        font-size: 12px;
+        }
+        body {
+            background-image: url(123.jpg);
+            background-attachment: scroll;
+            background-repeat: repeat-x;
+        } 
+    </style>
+</head>
+<body>
+    <h2 align="center">学生信息注册页面</h2>
+ <!-- <img src="123.jpg" alt=""> -->
+    <table align="center"  border="1" cellspacing="0" cellpadding="0" width="0" height="0">
+        <caption>请在以下注册页面输入正确的信息</caption>
+        <tbody>
+        <tr>
+         <td>姓名</td>
+         <td><input type="text" name="name" > </td>
+        </tr>
+        <tr>
+         <td>性别</td>
+         <td><label>男<input type="radio" name="sex" value="男"/></label><label>女<input type="radio" name="sex" value="女"/></label></td>
+        </tr>
+        <tr>
+            <td>生日</td>
+            <td>
+            <select>
+             <option>--请选择年--</option>
+             <option>1</option>
+             <option>2</option>
+            </select>
+            <select>
+                <option>--请选择月--</option>
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <select>
+                <option>--请选择日--</option>
+                <option>1</option>
+                <option>2</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+         <td>所在地区</td>
+         <td><input type="text" name="region" value="所在地区"/></td>
+        </tr>
+        <tr>
+         <td>年级</td>
+         <td>
+             <input type="radio" name="grade"/>大一
+             <input type="radio" name="grade"/>大二
+             <input type="radio" name="grade"/>大三
+             <input type="radio" name="grade"/>大四
+        </td>
+        </tr>
+        <tr>
+          <td>职务</td> 
+          <td>
+              <input type="checkbox" name="post"/>班长
+              <input type="checkbox" name="post"/>团支书
+              <input type="checkbox" name="post"/>学习委员
+            </td>   
+        </tr>
+        <tr>
+            <td>自我介绍</td>
+            <td><textarea rows="5" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="提交"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" name="neirong">我确定以上内容真实有效
+            </td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td>
+                <a href="./08-链接描点链接/index.html" target="_blank">我已注册，进入官网</a>
+            </td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td>
+                <dl>
+                    <dt><strong>联系我们</strong></dt>
+                    <dd>电话</dd>
+                    <dd>QQ</dd>
+                    <dd>微信</dd>
+                </dl>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

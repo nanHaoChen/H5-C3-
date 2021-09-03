@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .onee {
+            width: 400px;
+            height: 400px;
+            background-color: antiquewhite;
+            transition: 3s linear .5s ;
+            
+        }
+        div:hover {
+            transform: translate(100px,100px);
+        }
+        span {
+            display: inline-block;
+            width: 300px;
+            height: 100px;
+            background-color: blue;
+            transform: translate(100px,10px);
+        }
+        .one {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            transition:  all 1s;
+            /* 可以跟方位名词 百分比 默认50% */
+            transform-origin: right bottom;
+         
+           
+        }
+        .one:hover {
+            
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="onee"></div>
+    <span>123</span>
+    <!-- 不会影别的元素位置 -->
+    <!-- translate%移动自身的% -->
+    <div class="one"></div>
+    <!-- 设置元素转换点 transform-origin: x y; -->
+</body>
+</html>

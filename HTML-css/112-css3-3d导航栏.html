@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            position: relative;
+            width: 100px;
+            height: 40px;
+            perspective: 500px;
+            transform-style: preserve-3d;
+            margin: 200px auto;
+            transition: all 1s ;
+        }
+        .father:hover {
+            transform: rotateX(90deg);
+        }
+       .one {
+           position: absolute;
+           left: 0;
+           top: 0;
+           width: 100px;
+           height: 40px;
+           background-color: plum;
+              transform: translateZ(20px);
+           z-index: 1;
+       }
+       .father .two {
+           position: absolute;
+           left: 0;
+           top: 0;
+           width: 100px;
+           height: 40px;
+           background-color: red;
+           /* 注意先后顺序 */
+         transform: translateY(20px) rotateX(90deg);
+         
+          
+       }
+    </style>
+</head>
+<body>
+ <div class="father">
+     <div class="one"></div>
+     <div class="two"></div>
+ </div>
+</body>
+</html>

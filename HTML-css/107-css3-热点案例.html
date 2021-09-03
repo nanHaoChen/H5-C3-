@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            position: relative;
+            width: 1000px;
+            height: 1000px;
+        }
+
+        .one {
+            /* 保证在父盒子里面水平垂直居中，放大之后就会中心向四周扩散 就可以用w和h缩放 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 10px;
+            height: 10px;
+            background-color: cornflowerblue;
+            border-radius: 50%;
+
+        }
+
+        .two {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 10px;
+            height: 10px;
+            box-shadow: 0 0 8px cornflowerblue ;
+            border-radius: 50%;
+            animation: move 3s linear infinite;
+
+        }
+        .three {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 10px;
+            height: 10px;
+            box-shadow: 0 0 8px cornflowerblue ;
+            border-radius: 50%;
+            animation: moved 3s 1s linear infinite;
+
+        }
+        .four {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 10px;
+            height: 10px;
+            box-shadow: 0 0 8px cornflowerblue ;
+            border-radius: 50%;
+            animation: movedd 3s 2s linear infinite;
+
+        }
+        @keyframes move {
+            0% {
+                width: 10px;
+                height: 10px;
+            }  
+            70% {
+                width: 50px;
+                height: 50px;
+                opacity: 1;
+            }  
+            100% {
+
+               width: 80px;
+                height: 80px;
+                opacity: 0;
+            } 
+        }
+        @keyframes moved {
+            0% {
+                width: 10px;
+                height: 10px;
+            }  
+            70% {
+                width: 50px;
+                height: 50px;
+                opacity: 1;
+            }  
+            100% {
+
+               width: 80px;
+                height: 80px;
+                opacity: 0;
+            } 
+        }
+        @keyframes movedd {
+            0% {
+                width: 10px;
+                height: 10px;
+            }  
+            70% {
+                width: 50px;
+                height: 50px;
+                opacity: 1;
+            }  
+            100% {
+
+               width: 80px;
+                height: 80px;
+                opacity: 0;
+            } 
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+
+    </div>
+</body>
+
+</html>

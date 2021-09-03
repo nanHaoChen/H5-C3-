@@ -1,0 +1,19 @@
+1.1 HTML=Hyper Text Markeup language
+<html></html>  开始标签 结束标签 
+<br />  单标签
+*大部分成对出现
+1.2
+标签关系 : 包含关系 并列关系 
+包含:<head>
+            <title></title>
+        </head>
+并列:<head></head>
+        <body></body>
+2.基本机构标签
+2.1 第一个HTM
+结构标签（骨架标签）
+标签名                      定义                    说明            
+<html></html>   HTML标签   页面中最大的标签，我们称之为 根标签
+<head></head>  文件的头部  注意在head标签中我们必须要设置的标签是title 
+<title></title>      文档的标题  让页面拥有一个属于自己的网页标题
+<body></body>  文档的主体   元素包含文档的所有内容，页面内容 基本都是放到body里面的

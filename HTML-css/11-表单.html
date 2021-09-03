@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="111.php" method="GET">
+        <!-- <form >action="#" method="dialog" name="#"
+            action他的属性值是url地址，用于指定接收并处理表单数据的服务器程序的url地址；
+            method：他的属性值是get/post，用于设置表单数据的提交方式，有两种方式；
+            name：他的属性值是名称，用于指定表单的名称，方便区分同一个页面中的多个表单。 -->
+        <label for="yonghuming"> 用户名:</label>
+        <input type="text" name="username" maxlength="6" size="" id="yonghuming" placeholder="请输入用户名" /><br />
+        密码: <input type="password" name="pwd" maxlength="6" /><br />
+        性别：
+        <label for="nan">男</label><input type="radio" name="sex" value="男" id="nan" />
+        女<input type="radio" name="sex" value="女" />
+        爱好：音乐<input type="checkbox" name="hob" checked="checked" />舞蹈<input type="checkbox" />看书<input type="checkbox"
+            name="hob" />
+        <input type="submit" value="提交" />
+        <input type="reset" value="重置" />
+        <input type="button" value="获取短信验证码" />
+        <!--后期配合js-->
+        <input type="file" /> <br />
+        <textarea cols="55" rows="20"></textarea><br />
+        籍贯:
+        <select>
+            <option>陕西</option>
+            <option>江西</option>
+            <option>山西</option>
+            <option selected="selected">内蒙</option>
+        </select>
+
+
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {
+        overflow: hidden;
+        width: 500px;
+        height: 300px;
+    }
+    div img {
+        width: 100%;
+        height: 100%;
+        transition: all 1s;
+    }
+    div img:hover {
+        transform: scale(1.1);
+    }
+    .one {
+        margin-top: 100px;
+        width: 300px;
+        height: 100px;
+        border: 1px solid black;
+    }
+  .two ul li {
+      list-style: none;
+      float:  left;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      text-align: center;
+      border: 1px solid black;
+      margin-right: 30px;
+      line-height: 50px;
+      transition: all 1s;
+      cursor: pointer;
+  }
+  .two ul li:hover {
+      transform: scale(1.1);
+  }
+    </style>
+</head>
+<body>
+    <!-- transfrom：scale（）缩放 -->
+    <!-- 对比w和h缩放 这个不会影响其他盒子 而且w和h上沿不动 且可以设置缩放点 -->
+    <div><img src="123.jpg" alt=""></div>
+    <div class="one">
+           <div class="two">
+               <ul>
+                   <li>1</li>
+                   <li>2</li>
+                   <li>3</li>
+               </ul>
+           </div>
+    </div>
+</body>
+</html>
